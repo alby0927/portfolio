@@ -1,3 +1,7 @@
 :root {
   font-family: 'Noto Sans KR', sans-serif;
 }
+
+.skillsetImg img {
+  height: 100px;
+}
