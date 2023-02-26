@@ -76,10 +76,20 @@ a {
 }
 
 ul {
-  list-style: none;
+  padding-left: 0;
   color: var(--color-white);
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /* Navbar */
 #navbar {
   display: flex;
@@ -127,4 +137,32 @@ ul {
 
 .navbar__menu__item:hover {
   background-color: var(--color-grey);
+}
+
+/* Home */
+#home {
+  background: url(imgs/bg2.jpg);
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-black);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-black);
+  border-radius: var(--size-border-radius);
 }
