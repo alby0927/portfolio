@@ -166,3 +166,103 @@ button {
   border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
 }
+
+/* Section common */
+section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+
+.about__majors {
+  display: flex;
+
+  justify-content: center;
+
+  margin: 4px 0;
+}
+
+.major__icon {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-direction: row;
+  color: var(--color-blue);
+  margin-bottom: 16px;
+}
+
+.fa-brands {
+  width: 170px;
+  height: 170px;
+  font-size: 100px;
+  line-height: 170px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.fa-brands:hover {
+  color: var(--color-dark-pink);
+  border-color: var(--color-dark-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.fa-brands {
+  transition: all 300ms ease;
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+  display: flex;
+  justify-content: center;
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.edu__title {
+  margin-top: 80px;
+}
+
+.edu__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.edu__name,
+.edu__period {
+  color: var(--color-dark-grey);
+}
+
+.edu__detail {
+  margin: auto 0;
+}
+
+.edu1,
+.edu2 {
+  display: flex;
+  justify-content: center;
+}
+
+.edu__logo1 {
+  width: 100px;
+  height: 100px;
+}
+
+.edu__logo2 {
+  width: 40px;
+  height: 40px;
+}
+
+.edu__full__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}
