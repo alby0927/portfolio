@@ -24,6 +24,10 @@
       crossorigin="anonymous"
     ></script>
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -42,29 +46,61 @@
           Alby</a
         >
       </div>
+      <div></div>
       <ul class="navbar__menu">
-        <li class="navbar__menu__item active">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">Portfolio</li>
-        <li class="navbar__menu__item">Contact</li>
+        <li
+          class="navbar__menu__item active"
+          data-link="#home"
+        >
+          Home
+        </li>
+        <li class="navbar__menu__item" data-link="#about">
+          About
+        </li>
+        <li class="navbar__menu__item" data-link="#skills">
+          Skills
+        </li>
+        <li
+          class="navbar__menu__item"
+          data-link="#portfolio"
+        >
+          Portfolio
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">
+          Contact
+        </li>
       </ul>
+
+      <button class="navbar__toggle">
+        <i
+          class="navbar__toggle_button fa-solid fa-bars"
+        ></i>
+      </button>
     </nav>
     <section id="home">
-      <img
-        src="imgs/athid1.jpg"
-        alt="alby's profile photo"
-        class="home__avatar"
-      />
-      <h1 class="home__title">반갑습니다.<br /></h1>
-      <h3 class="home__description">
-        저는 프론트엔드 엔지니어 강정민입니다.
-      </h3>
-      <button class="home__contact">Contact Me</button>
+      <div class="home__container">
+        <img
+          src="imgs/athid1.jpg"
+          alt="alby's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">반갑습니다.<br /></h1>
+        <h3 class="home__description">
+          저는 프론트엔드 엔지니어 강정민입니다.
+        </h3>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
-    <section id="about">
+    <section id="about" class="section">
       <h1>About me</h1>
-      <p>프론트엔드를 위한 국비 지원 학원을 다녔습니다.</p>
+      <p>
+        저는 실용음악을 전공하였고, EZEN아카데미 '프론트엔드
+        개발 과정' 훈련을 수료하였습니다.<br />
+        개발 중 문제 해결을 위한 요령을 가졌으며 작업 중
+        스트레스 관리에 능합니다.<br />
+        주어진 일에 대하여 끈질기게 분석 탐구하여 해결하려
+        노력합니다.
+      </p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
@@ -115,76 +151,117 @@
         </div>
       </div>
     </section>
-    <section id="skills">
-      <h1>Skills</h1>
-      <h3>Skills & Attributes</h3>
-      <p>새로운 기술 습득을 즐깁니다.</p>
-      <div class="skillset">
-        <div class="skillBox">
-          <div class="skillsetHTML">HTML5</div>
-          <div class="skillsetImg">
-            <img src="imgs/HTML5_logo.png" alt="" />
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h3>Skills & Attributes</h3>
+        <p>새로운 기술 습득을 즐깁니다.</p>
+        <div class="skillset">
+          <div class="skillBox">
+            <div class="skillsetTitle">HTML5</div>
+            <div class="skillsetImg">
+              <img src="imgs/HTML5_logo.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="skillBox">
-          <div class="skillsetHTML">CSS</div>
-          <div class="skillsetImg">
-            <img src="imgs/CSS3_logo.png" alt="" />
+          <div class="skillBox">
+            <div class="skillsetTitle">CSS</div>
+            <div class="skillsetImg">
+              <img src="imgs/CSS3_logo.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="skillBox">
-          <div class="skillsetHTML">JavaScript</div>
-          <div class="skillsetImg">
-            <img src="imgs/JavaScript_logo.png" alt="" />
+          <div class="skillBox">
+            <div class="skillsetTitle">JavaScript</div>
+            <div class="skillsetImg">
+              <img src="imgs/JavaScript_logo.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="skillBox">
-          <div class="skillsetHTML">React</div>
-          <div class="skillsetImg">
-            <img src="imgs/React-icon.png" alt="" />
+          <div class="skillBox">
+            <div class="skillsetTitle">React</div>
+            <div class="skillsetImg">
+              <img src="imgs/React-icon.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="portfolio">
-      <h1>Porfolio</h1>
+    <section id="portfolio" class="section">
+      <h1>Portfolio</h1>
       <h3>Projects</h3>
+      <br />
       <div class="portfolio__projects">
         <a
           href="https://reliable-baklava-2dcefa.netlify.app"
           class="project"
           target="_blank"
         >
-          <img
-            class="project__img"
-            src="imgs/youtube.PNG"
-            alt="Youtube"
-          />
+          <div class="project__img__box">
+            <img
+              class="project__img"
+              src="imgs/youtube.PNG"
+              alt="Youtube"
+            />
+          </div>
           <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Youtube Clone coding with React</span>
+            <h2>Youtube Site</h2>
+            <p>
+              유튜브 클론 사이트<br />Youtube clone coding
+              with React
+            </p>
           </div>
         </a>
+        <br />
         <a
           href="https://polite-lily-2b73d8.netlify.app"
           class="project"
           target="_blank"
         >
-          <img
-            class="project__img"
-            src="imgs/dancingcat.PNG"
-            alt="dancingcat"
-          />
+          <div class="project__img__box">
+            <img
+              class="project__img"
+              src="imgs/dancingcat.PNG"
+              alt="dancingcat"
+            />
+          </div>
           <div class="project__description">
-            <h3>Online Shop</h3>
-            <span>Online Shop coding with React</span>
+            <h2>Online Shop</h2>
+            <p>
+              온라인 쇼핑몰<br />Online Shop coding with
+              React
+            </p>
+          </div>
+        </a>
+        <br />
+        <a
+          href="https://wonderful-melba-3c7e2d.netlify.app"
+          class="project"
+          target="_blank"
+        >
+          <div class="project__img__box">
+            <img
+              class="project__img"
+              src="imgs/blog.PNG"
+              alt="Youtube"
+            />
+          </div>
+          <div class="project__description">
+            <h2>Online blog</h2>
+            <p>
+              개인 블로그<br />Personal blog coding with
+              React
+            </p>
           </div>
         </a>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Contact me</h1>
-      <h3 class="contact_email">istar102@gmail.com</h3>
+      <a
+        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=istar102@gmail.com"
+        target="_blank"
+        class="email"
+      >
+        istar102@gmail.com</a
+      >
       <div class="contact__links">
         <a
           href="https://github.com/alby0927"
@@ -192,14 +269,11 @@
         >
           <i class="fa-brands fa-github"></i>
         </a>
-        <a
-          href="https://app.netlify.com/teams/alby0927/overview"
-          target="_blank"
-        >
-          <i class="fa-solid fa-diamond"></i>
-        </a>
       </div>
       <p>2023 Alby - All rights reserved</p>
     </section>
+    <button class="arrow-Up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
   </body>
 </html>
