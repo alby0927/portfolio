@@ -232,7 +232,7 @@ button {
   line-height: 170px;
   border: 1px solid var(--color-blue);
   border-radius: 50%;
-  margin: 20px 0 0 0;
+  margin: auto;
 }
 
 .fa-brands:hover {
@@ -370,18 +370,23 @@ section#portfolio {
   font-size: var(--font-medium);
   margin: 0px;
 }
+
+.contact__links {
+  margin: 20px;
+}
+
 .email {
   font-size: var(--font-medium);
   color: var(--color-black);
+  margin-bottom: 20px;
 }
 .fa-github {
   color: var(--color-blue);
-  margin: 5 0 0 0px;
+  margin: auto;
 }
 
 .fa-diamond {
   color: var(--color-blue);
-  margin: 5px;
 }
 
 .fa-diamond {
