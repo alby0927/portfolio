@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  width: 100%;
+
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -70,6 +70,7 @@ h3 {
 body {
   margin: 0;
   cursor: default;
+  width: 100%;
 }
 
 a {
