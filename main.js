@@ -32,7 +32,7 @@ navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// contactMe button
+// Contact Me button
 const contactMe = document.querySelector('.home__contact');
 contactMe.addEventListener('click', (e) => {
   scrollIntoView('#contact');
