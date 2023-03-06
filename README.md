@@ -1,2 +1,1 @@
-# portfolio
- alby's portfolio
+포트폴리오 사이트입니다 링크를 통하여 이동하실 수 있습니다.
